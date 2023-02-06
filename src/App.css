@@ -1,38 +1,116 @@
-.App {
+body{
+  background-color: black;
+  margin:0;
+  padding:0;
+}
+#navbar{
+  position:sticky;
+  left:0;
+  top:0;
+}
+#mainHeading{
   text-align: center;
+  color:white;
+  margin:10px;
+  margin-top: 20px;
+  margin-bottom:0;
+  padding-bottom:0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.myContainer{
+  display: flex; 
+  margin-top:10px;
+  margin:50px;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.myCard{
+  background-color:green;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+.originalCard{
+  width:350px;
+  margin:30px;
+  margin-top:0;
+  display:flex;
+  box-shadow:10px 13px 15px rgb(86, 88, 88);
+  justify-content: center;
   flex-direction: column;
   align-items: center;
+  background-color: black;
+  min-height:500px;
+  max-height:500px;
+  border-top:4px solid rgb(255, 115, 0);
+  border-left: 4px solid white;
+  border-right: 4px solid white;
+  border-bottom:4px solid rgb(0, 255, 0);
+  padding:2px;
+  border-radius:20px;
+  overflow:hidden; 
+}
+.originalCard img{
+  width:100%;
+  border-radius: 15px;
+  display: block;
+  margin:auto;
+  margin-top:0;
+  background-position: center;
+  min-height:210px;
+  max-height: 210px;
+  border:1px solid rgb(97, 93, 93);     
+}
+.originalCard h2{
+  text-align: center; 
+  color:rgb(255, 115, 0);
+  min-height:65px;
+  max-height:65px;
+  margin-top:5px;
+  padding:5px;
+  overflow: hidden;
+  font-size: 25px;
+  font-weight: bold;
+  width:100%;
+  text-align: center;
+}
+.originalCard p{
+  color:white;
+  width:100%;
+  overflow: hidden;
+  margin: 0px;
+  text-align: center;
+
+}
+#paragraph{
+  min-height:200px;
+  max-height:200px;
+  padding:3px;
+  overflow: hidden;
+}
+#readMore a{
+  color:rgb(0, 255, 64);
+  font-weight: bold;
+}
+#buttons{
+  display:flex;
+  background-color: black;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height:fit-content;
+  width:100%;
+  position:sticky;
+  bottom:0;
+  left:0;
+  align-items: center;
 }
-
-.App-link {
-  color: #61dafb;
+#buttons button{
+  width:50px;
+  background-color: black;
+  border:1px solid white;
+  min-height:35px;
+  max-height:35px;
+  padding:0;
+  font-size: 20px;
+  color:white;
+  margin:auto;
+  font-weight: bold;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#spinner{
+  margin-top:100px;
 }
