@@ -51,7 +51,7 @@ body{
   border-radius: 15px;
   display: block;
   margin:auto;
-  margin-top:0;
+  margin:0;
   background-position: center;
   min-height:210px;
   max-height: 210px;
@@ -79,9 +79,10 @@ body{
 
 }
 #paragraph{
-  min-height:200px;
-  max-height:200px;
+  min-height:155px;
+  max-height:155px;
   padding:3px;
+  margin-top:2px;
   overflow: hidden;
 }
 #readMore a{
@@ -99,6 +100,7 @@ body{
   left:0;
   align-items: center;
 }
+
 #buttons button{
   width:50px;
   background-color: black;
@@ -113,4 +115,12 @@ body{
 }
 #spinner{
   margin-top:100px;
+}
+#userInfo{
+  background-color:white  ;
+  font-weight: bold;
+}
+#userInfoDiv{
+  min-height: 50px;
+  min-width:50px;
 }
