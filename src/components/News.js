@@ -4,6 +4,7 @@ import Spinner from './Spinner';
 import InfiniteScroll from "react-infinite-scroll-component";
 import PropTypes from 'prop-types'
 
+
 export class News extends Component {
   static defaultProps = {
     pageSize: 9,
@@ -29,11 +30,13 @@ export class News extends Component {
       page: 1,
       totalResults:0,
       loading: true,
+      progress:10,
     }
   }
 
   //this function runs after adding the dom
   async componentDidMount() {
+    document.title = this.props.category + '- NewsKing';
     let url = `https://newsapi.org/v2/top-headlines?country=${this.props.countryName}&category=${this.props.category}&apiKey=364e8e98229640c68ba584320bb61b7b&pageSize=${this.props.pageSize}`;
     let data = await fetch(url)
     data = await data.json()
